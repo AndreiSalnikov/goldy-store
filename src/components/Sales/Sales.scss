@@ -1,6 +1,7 @@
 .sales {
   max-width: 1300px;
   margin: 0 auto 10px;
+  position: relative;
   &__title {
     margin: 0 0 10px 0;
     font-family: 'Prata',Arial,sans-serif;
@@ -15,12 +16,12 @@
     align-items: flex-start;
   }
 
-  &__grid {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
+  //&__grid {
+  //  position: absolute;
+  //  display: grid;
+  //  grid-template-columns: repeat(4, 1fr);
+  //  gap: 20px;
+  //}
 
   &__navigate {
     display: flex;
@@ -51,8 +52,8 @@
     border: none;
   }
 
-  &__leftArrow {
-    margin: 0 8px 0 715px;
-  }
+  //&__leftArrow {
+  //  margin: 0 8px 0 715px;
+  //}
 
 }

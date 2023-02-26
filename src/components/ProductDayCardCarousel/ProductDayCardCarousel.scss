@@ -1,0 +1,31 @@
+.product-day-card-carousel {
+  max-width: 1300px;
+
+  &__window {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__leftArrow {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+
+  &__rightArrow {
+    cursor: pointer;
+  }
+
+  &__arrows {
+    display: flex;
+    position: absolute;
+    top:25px;
+    right: 0;
+  }
+
+  &__all-items-container {
+    transition: transform .5s ease-out;
+    height: 100%;
+    display: flex;
+  }
+}

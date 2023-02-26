@@ -1,11 +1,19 @@
 import React from 'react';
-import Banner from "../Banner/Banner";
+import MainBanner from "../MainBanner/MainBanner";
+import MainBannerCarousel from "../MainBannerCarousel/MainBannerCarousel";
 import "./Main.scss"
+
 const Main = () => {
   return (
     <section className='main'>
-    <Banner>
-    </Banner>
+      <MainBannerCarousel>
+        <MainBanner>
+        </MainBanner>
+        <MainBanner>
+        </MainBanner>
+        <MainBanner>
+        </MainBanner>
+      </MainBannerCarousel>
     </section>
   );
 };
