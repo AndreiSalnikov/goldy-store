@@ -1,0 +1,62 @@
+.discount-banner {
+  position: relative;
+  background-color: #F8F8F8;
+  width: 420px;
+  height: 290px;
+  overflow: hidden;
+
+  &__diamond {
+    width: 409.28px;
+    height: 349.89px;
+    right: 0;
+    top: 25.5px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../images/discountBannerDiamond.svg");
+  }
+
+  &__product {
+    position: absolute;
+    right: 0;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 222px;
+    margin: 72px 0 22px 26px;
+    font-family: 'Inter',Arial,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #303030;
+  }
+
+  &__discount {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    width: 194px;
+    height: 52px;
+  }
+
+  &__pretitle {
+    margin: 0 13px 0 26px;
+    font-family: 'Inter',Arial,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+  }
+
+  &__sale {
+    margin: 0;
+    font-family: 'Inter',Arial,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 160%;
+  }
+}

@@ -1,0 +1,22 @@
+.categories {
+  max-width: 1300px;
+  margin: 120px auto 120px;
+
+  &__title {
+    margin: 0 0 40px 0;
+    max-width: 477px;
+    font-family: 'Prata',Arial sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: #303030;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+
+}

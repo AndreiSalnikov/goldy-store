@@ -1,0 +1,43 @@
+.timer {
+  margin-bottom: 20px;
+  display: flex;
+  width: 224px;
+  height: 64px;
+  background: #F5F5F5;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+  }
+
+  &__numbers {
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #303030;
+  }
+
+  &__text {
+    margin: 2px 0 0 0;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 100%;
+    color: #303030;
+  }
+
+  &__dots {
+    margin: 0 9px 0;
+  }
+}
