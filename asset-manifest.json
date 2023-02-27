@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d1461f16.css",
-    "main.js": "./static/js/main.bc7c8c9f.js",
+    "main.css": "./static/css/main.921db1ac.css",
+    "main.js": "./static/js/main.8a9b54ae.js",
     "static/js/787.e9a3519d.chunk.js": "./static/js/787.e9a3519d.chunk.js",
     "static/media/Inter-Black.ttf": "./static/media/Inter-Black.e50c4ee677e4b201994b.ttf",
     "static/media/Inter-Medium.ttf": "./static/media/Inter-Medium.9cbff87dc577185b8630.ttf",
@@ -58,12 +58,12 @@
     "static/media/header__rightInfoLogo.svg": "./static/media/header__rightInfoLogo.6f356ce7d2350a31d24d.svg",
     "static/media/productDayCardCompare.svg": "./static/media/productDayCardCompare.0225a14fb3ffafcb0426.svg",
     "static/media/productDayCardGoldStar.svg": "./static/media/productDayCardGoldStar.a6020c2e68a8a03b7e42.svg",
-    "main.d1461f16.css.map": "./static/css/main.d1461f16.css.map",
-    "main.bc7c8c9f.js.map": "./static/js/main.bc7c8c9f.js.map",
+    "main.921db1ac.css.map": "./static/css/main.921db1ac.css.map",
+    "main.8a9b54ae.js.map": "./static/js/main.8a9b54ae.js.map",
     "787.e9a3519d.chunk.js.map": "./static/js/787.e9a3519d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1461f16.css",
-    "static/js/main.bc7c8c9f.js"
+    "static/css/main.921db1ac.css",
+    "static/js/main.8a9b54ae.js"
   ]
 }
