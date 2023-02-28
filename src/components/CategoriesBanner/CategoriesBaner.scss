@@ -3,14 +3,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  //width: 200px;
   height: 259px;
   background-color: #F8F8F8;
   flex-direction: column;
 
+  @media screen and (max-width: 400px) {
+    height: 200px;
+  }
+
+
   &__productImg {
     position: absolute;
     transition: transform .3s ease-out;
+
+    @media screen and (max-width: 400px) {
+      max-width: 100px;
+      max-height: 100px;
+    }
   }
 
   &__productImg:hover {
@@ -19,7 +29,7 @@
   }
 
   &__title {
-    margin: 207px 0 0 0;
+    margin: 200px 0 0 0;
     max-width: 140px;
     text-align: center;
     font-family: 'Inter',Arial,sans-serif;
@@ -28,6 +38,11 @@
     font-size: 16px;
     line-height: 100%;
     color: #303030;
+
+    @media screen and (max-width: 400px) {
+      margin: 154px 0 0 0;
+    }
+
   }
 
 }

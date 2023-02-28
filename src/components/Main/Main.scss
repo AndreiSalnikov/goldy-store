@@ -1,4 +1,16 @@
 .main {
   max-width: 1300px;
   margin: 20px auto 0;
+
+  @media screen and (max-width: 1300px) {
+    padding: 0 15px 0;
+  }
+
+  @media screen and (max-width: 960px) {
+    margin: 87px auto 0;
+  }
+
+  @media screen and (max-width: 802px) {
+    padding: 0;
+  }
 }

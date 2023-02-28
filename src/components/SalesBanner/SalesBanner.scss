@@ -1,9 +1,17 @@
 .salesBanner {
-  width: 307px;
+  max-width: 307px;
   height: 370px;
   border: 1px solid #F0F0F0;
   position: relative;
   transition: all .3s ease-out;
+
+  @media screen and (max-width: 600px) {
+    max-width: 295px;
+  }
+
+  @media screen and (max-width: 450px) {
+    max-width: 248px;
+  }
 
   &__specialMark {
     display: flex;
@@ -33,7 +41,7 @@
   &__bestsellerIcon {
     margin: 16px 0 3px 4px;
     color: #fff;
-   opacity: 0;
+    opacity: 0;
     width: 50px;
     height: 21px;
     border-radius: 15px;
@@ -90,6 +98,9 @@
 
   &__productImg {
     margin: 0 55px 26px;
+    @media screen and (max-width: 450px) {
+      max-width: 150px;
+    }
   }
 
   &__productImg:hover {
@@ -98,11 +109,14 @@
 
   &__prices {
     display: flex;
+    align-items: center;
+    margin: 0 24px 16px;
   }
 
   &__newPrice {
-    margin: 0 8px 16px 24px;
-    font-family: 'Inter',Arial,sans-serif;
+    margin-right: 8px;
+    //margin: 0 8px 16px 24px;
+    font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -112,7 +126,7 @@
 
   &__oldPrice {
     display: none;
-    font-family: 'Inter',Arial,sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -120,6 +134,11 @@
     text-decoration-line: line-through;
     color: #8F8F8F;
     margin-right: 63px;
+
+    @media screen and (max-width: 450px) {
+      margin-right: 20px;
+    }
+
   }
 
   &__oldPrice_active {
@@ -133,7 +152,7 @@
     width: 50px;
     height: 21px;
     color: #fff;
-    font-family: 'Inter',Arial,sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -148,7 +167,7 @@
 
   &__title {
     margin: 0 24px 26px;
-    font-family: 'Inter',Arial,sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -164,6 +183,11 @@
     margin: 2px 24px 8px;
     width: 246.5px;
     height: 40px;
+
+    @media screen and (max-width: 450px) {
+      width: 190px;
+    }
+
   }
 
   &__metals_active {
@@ -174,8 +198,9 @@
   &__metals:last-of-type {
     margin: 0 24px 24px;
   }
+
   &__metal {
-    font-family: 'Inter',Arial,sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

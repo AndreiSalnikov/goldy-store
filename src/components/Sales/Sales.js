@@ -26,10 +26,7 @@ const Sales = () => {
             <button className='sales__button'>Часы</button>
           </li>
         </ul>
-        {/*<img className='sales__leftArrow' src={bannerLeftArrow} alt='стрелка влево'/>*/}
-        {/*<img className='sales__rightArrow' src={bannerRightArrow} alt='стрелка вправо'/>*/}
-      </div>
-      {/*<div className='sales__grid'>*/}
+       </div>
       <SalesBannerCarousel>
         <SalesBanner isSale={true} isBestseller={true} productImg={salesBannerProductImg1} oldPrice={65000}
                      sale={45}></SalesBanner>
@@ -46,8 +43,6 @@ const Sales = () => {
         <SalesBanner isSale={true} isBestseller={false} productImg={salesBannerProductImg4} oldPrice={39200}
                      sale={0}></SalesBanner>
       </SalesBannerCarousel>
-
-      {/*</div>*/}
     </section>
   );
 };

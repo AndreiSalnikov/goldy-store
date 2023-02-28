@@ -1,23 +1,23 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import './SalesBannerCarousel.scss'
 import bannerLeftArrow from "../../images/bannerLeftArrow.svg"
 import bannerRightArrow from "../../images/bannerRightArrow.svg"
 
 const SalesBannerCarousel = ({children}) => {
+  const widthBanner = useRef();
   const [offset, setOffset] = useState(0);
 
   const handleLeftArrowClick = () => {
     setOffset((currentOffset) => {
-      const newOffset = currentOffset + 1300;
+      const newOffset = currentOffset + widthBanner.current.offsetWidth;
       return Math.min(newOffset, 0);
     })
   }
 
   const handleRightArrowClick = () => {
     setOffset((currentOffset) => {
-      const newOffset = currentOffset - 1300;
-      const maxOffset = -(1300 * (children.length - 1));
-      return Math.max(newOffset, maxOffset);
+      const newOffset = currentOffset - widthBanner.current.offsetWidth;
+      return Math.max(newOffset, -1300);
     })
   }
 
@@ -30,7 +30,7 @@ const SalesBannerCarousel = ({children}) => {
           <img className='sales-banner-carousel__rightArrow' src={bannerRightArrow} alt='стрелка вправо'
                onClick={handleRightArrowClick}/>
         </div>
-        <div className='sales-banner-carousel__all-items-container'
+        <div ref={widthBanner} className='sales-banner-carousel__all-items-container'
              style={{
                transform: `translateX(${offset}px)`
              }}

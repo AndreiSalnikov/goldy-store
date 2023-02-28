@@ -3,10 +3,19 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 1035px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__left {
     position: relative;
     width: 550px;
     height: 550px;
+    @media screen and (max-width: 550px) {
+      max-width: 300px;
+      max-height: 300px;
+    }
   }
 
   &__special-mark {
@@ -36,6 +45,13 @@
     margin: 0;
   }
 
+  &__img {
+    @media screen and (max-width: 550px) {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
   .grey-blue {
     background: #495159;
   }
@@ -50,6 +66,14 @@
 
   &__right {
     width: 650px;
+    @media screen and (max-width: 700px) {
+      max-width: 500px;
+    }
+
+    @media screen and (max-width: 550px) {
+      max-width: 300px;
+    }
+
   }
 
   &__top {
@@ -114,19 +138,17 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #F0F0F0;
+    @media screen and (max-width: 550px) {
+      flex-wrap: wrap;
+    }
   }
-
-  //&__info: {
-  //  content: "";
-  //  border-bottom: 1px solid #303030;
-  //}
 
   &__new-price {
     margin: 0 16px 0 0;
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 100%;
     color: #303030;
   }
@@ -191,6 +213,7 @@
     width: 32px;
     height: 32px;
     transition: border .3s ease-out;
+
     &:hover {
       cursor: pointer;
     }
@@ -200,8 +223,6 @@
     }
 
   }
-
-
 
   &__color:last-of-type {
     margin: 0;
@@ -259,7 +280,6 @@
     display: flex;
     align-items: center;
     margin: 0 0 14px 0;
-    //margin-bottom: 14px;
   }
 
   &__size-title {
@@ -274,12 +294,19 @@
   }
 
   &__size-info {
+    cursor: pointer;
     position: relative;
     width: 18px;
     height: 18px;
     background-color: #F0F0F0;
     border-radius: 50%;
   }
+
+  &__size-info:hover .product-day-card__text {
+    z-index: 1;
+    opacity: 1;
+  }
+
 
   &__size-info:before {
     font-family: 'Inter', Arial, sans-serif;
@@ -297,8 +324,42 @@
     left: 6px;
   }
 
+  &__text {
+    transition: all .3s ease-out;
+    z-index: -1;
+    opacity: 0;
+    width: 223px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 24px;
+    position: absolute;
+    right: -126px;
+    top: -160px;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #303030;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    &:before {
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #FFFFFF;
+    }
+
+  }
+
   &__size-list {
     display: flex;
+    flex-wrap: wrap;
+
   }
 
   &__size {
@@ -316,7 +377,7 @@
     border: 1px solid #DADADA;
     transition: all .3s ease-out;
 
-    &_active{
+    &_active {
       border: none;
       background: #303030;
       color: #fff;
@@ -406,19 +467,19 @@
     margin-bottom: 23px;
   }
 
-  &__save-box  &__like-title  {
+  &__save-box &__like-title {
     transition: color .3s ease-out;
   }
 
-  &__save-box  &__like{
+  &__save-box &__like {
     transition: background-image .3s ease-out;
   }
 
-  &__save-box:hover  &__like-title{
+  &__save-box:hover &__like-title {
     color: #979797;
   }
 
-  &__save-box:not(.product-day-card__save-box_active):hover  &__like {
+  &__save-box:not(.product-day-card__save-box_active):hover &__like {
     background-image: url("../../images/salesBannerLikeImgGreyHover.svg");
   }
 
@@ -470,11 +531,11 @@
     color: #303030;
   }
 
-  &__compare-box  &__compare-title  {
+  &__compare-box &__compare-title {
     transition: color .3s ease-out;
   }
 
-  &__compare-box:hover  &__compare-title  {
+  &__compare-box:hover &__compare-title {
     color: #979797;
   }
 
@@ -492,11 +553,11 @@
     height: 20px;
   }
 
-  &__share-box  &__share-title  {
+  &__share-box &__share-title {
     transition: color .3s ease-out;
   }
 
-  &__share-box:hover  &__share-title  {
+  &__share-box:hover &__share-title {
     color: #979797;
   }
 

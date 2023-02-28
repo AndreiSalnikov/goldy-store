@@ -1,15 +1,23 @@
 .article {
   max-width: 310px;
   max-height: 475px;
-
   &__img {
     max-width: 100%;
-    max-height: 475px;
+    transition: transform .3s ease-out;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  &__img-box {
     margin: 0 0 20px 0;
+    overflow: hidden;
+    max-height: 381px;
+    max-width: 310px;
   }
 
   &__date {
-    //margin: 20px 0 12px 0;
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -19,6 +27,7 @@
   }
 
   &__title {
+    transition: opacity .3s ease-out;
     margin: 12px 0 0 0;
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
@@ -26,5 +35,11 @@
     font-size: 16px;
     line-height: 100%;
     color: #303030;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
   }
 }

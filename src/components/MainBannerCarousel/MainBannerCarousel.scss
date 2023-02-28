@@ -14,13 +14,30 @@
     top: 253px;
     left: 24px;
     z-index: 4;
+
+    @media screen and (max-width: 1140px) {
+      top: 176px
+    }
+
+    @media screen and (max-width: 802px) {
+      top: 240px
+    }
+
   }
 
   &__rightArrow {
     position: absolute;
     cursor: pointer;
     right: 24px;
-    top: 253px
+    top: 253px;
+
+    @media screen and (max-width: 1140px) {
+      top: 176px
+    }
+
+    @media screen and (max-width: 802px) {
+      top: 240px
+    }
   }
 
   &__dots {
@@ -28,6 +45,11 @@
     position: absolute;
     bottom: 24px;
     left: 50%;
+
+    @media screen and (max-width: 802px) {
+      left: 46%;
+    }
+
   }
 
   &__dot {

@@ -10,6 +10,7 @@ const ProductDayCard = ({productName, code, sale, oldPrice}) => {
   const [isFastBuyClicked, setIsFastBuyClicked] = useState(false);
   const [activeSize, setActiveSize] = useState("");
   const [activeColor, setActiveColor] = useState("");
+  const [IsQuestionMarkClicked,setIsQuestionMarkClicked] = useState(false)
   const handleSizeClick = (event) => {
     setActiveSize(event.target.id);
   }
@@ -54,7 +55,12 @@ const ProductDayCard = ({productName, code, sale, oldPrice}) => {
         </div>
         <div className='product-day-card__size-title-box'>
           <p className='product-day-card__size-title'>размер</p>
-          <div className='product-day-card__size-info'></div>
+          <div className='product-day-card__size-info'
+               onMouseEnter={() => setIsQuestionMarkClicked(true)}
+               onMouseLeave={() => setIsQuestionMarkClicked(false)}
+          >
+              <p className='product-day-card__text'>Также как существующая теория напрямую зависит от экономической целесообразности принимаемых решений.</p>
+          </div>
         </div>
         <div className='product-day-card__size-list'>
           <button id={'1'} className={activeSize === "1" ? "product-day-card__size product-day-card__size_active" : 'product-day-card__size'} onClick={handleSizeClick}>15,5</button>

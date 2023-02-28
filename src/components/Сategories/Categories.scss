@@ -2,10 +2,14 @@
   max-width: 1300px;
   margin: 120px auto 120px;
 
+  @media screen and (max-width: 1300px) {
+    padding: 0 15px 0;
+  }
+
   &__title {
     margin: 0 0 40px 0;
     max-width: 477px;
-    font-family: 'Prata',Arial sans-serif;
+    font-family: 'Prata', Arial sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -17,6 +21,21 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+
+    @media screen and (max-width: 1300px) {
+      gap: 20px;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 520px) {
+      gap: 20px;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
   }
 
 }
